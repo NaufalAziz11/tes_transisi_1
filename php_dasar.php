@@ -33,6 +33,24 @@ echo "<br><br>jumlah huruf kecil dalam kata : ";
 echo  similar_text($kata, 'transisi');
 
 
-echo "<br>Unigram : ";
-$str = "Jakarta adalah ibukota negara Republik Indonesia";
-print_r(explode(",", $str));
+
+$a = "coba";
+echo str_pad($a, 5) . "<br>";
+echo str_pad($a, 10, ",", STR_PAD_LEFT) . "<br>";
+echo str_pad($a, 8, "++", STR_PAD_BOTH) . "<br>";
+echo str_pad($a, 10, "[]") . "<br>";
+echo str_pad($a, 2, "*") . "<br>";
+
+
+echo "Unigram : ";
+echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 0) . "<br>";
+echo "Bigram : ";
+echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 0, 7);
+echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 8, 16);
+echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 25, 17);
+echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 43) . "<br>";
+// echo "Trigram : ";
+// echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 0, 7);
+// echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 8, 7) . "<br>";
+// echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 8, 12) . "<br>";
+// echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 43) . "<br>";
