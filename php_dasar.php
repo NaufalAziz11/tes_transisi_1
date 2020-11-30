@@ -34,14 +34,6 @@ echo  similar_text($kata, 'transisi');
 
 
 
-$a = "coba";
-echo str_pad($a, 5) . "<br>";
-echo str_pad($a, 10, ",", STR_PAD_LEFT) . "<br>";
-echo str_pad($a, 8, "++", STR_PAD_BOTH) . "<br>";
-echo str_pad($a, 10, "[]") . "<br>";
-echo str_pad($a, 2, "*") . "<br>";
-
-
 echo "Unigram : ";
 echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 0) . "<br>";
 echo "Bigram : ";
