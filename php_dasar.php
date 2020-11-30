@@ -34,7 +34,7 @@ echo  similar_text($kata, 'transisi');
 
 
 
-echo "Unigram : ";
+echo "<br>Unigram : ";
 echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 0) . "<br>";
 echo "Bigram : ";
 echo substr("Jakarta, adalah, ibukota, negara, Republik, Indonesia", 0, 7);
